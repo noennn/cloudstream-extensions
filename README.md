@@ -7,7 +7,38 @@ automaticamente en su propio archivo `.cs3` y se publica en la rama `builds`.
 
 ---
 
+## Providers incluidos
+
+Todos en espanol, **sin porno** y sin providers en ingles.
+
+| Provider | Sitio | Tipo | Idioma |
+|---|---|---|---|
+| `DoramasYTProvider` | doramasyt.com | Doramas asiaticas | mx |
+| `LatAnimeProvider` | latanime.org | Anime | mx |
+| `PeliculasFlixProvider` | peliculasflix.co | Peliculas | es |
+| `SoloLatinoProvider` | sololatino.net | Peliculas, series, anime | mx |
+| `CinecalidadProvider` | cinecalidad.lol | Peliculas, series | mx |
+| `Pelisplus4KProvider` | pelisplus.to | Peliculas, series | mx |
+
+---
+
 ## Como se instala en CloudStream
+
+### Opcion rapida: APK parcheado (sin tocar nada en la app)
+
+El APK parcheado ya trae este repositorio **y** el oficial de CloudStream
+preinstalados, y descarga e instala los plugins **solo al arrancar**. No
+tienes que añadir repos ni instalar nada a mano.
+
+```
+https://github.com/noennn/cloudstream-extensions/releases
+```
+
+1. Instala el `.apk` parcheado (desinstala el oficial antes).
+2. Abre la app: los plugins se descargan solos en el primer arranque.
+3. Listo.
+
+### Opcion normal: añadir el repositorio a mano
 
 1. Abre CloudStream → **Ajustes → Extensiones → Añadir repositorio**
 2. Pega esta URL:
@@ -16,10 +47,10 @@ automaticamente en su propio archivo `.cs3` y se publica en la rama `builds`.
 https://raw.githubusercontent.com/noennn/cloudstream-extensions/builds/repo.json
 ```
 
-3. Entra al repositorio y busca **DoramasYT** → **Instalar**
+3. Entra al repositorio, busca el provider que quieras → **Instalar**
 4. En la app, abre el engranaje del plugin para seleccionar el proveedor
 
-> El repositorio se actualiza solo: cada vez que se hace push a `master`,
+> El repositorio se actualiza solo: cada vez que se hace push a `main`,
 > GitHub Actions recompila y sube los `.cs3` a la rama `builds`.
 
 ---

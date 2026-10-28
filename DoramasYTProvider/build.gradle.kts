@@ -1,18 +1,28 @@
-// Numero de version del plugin. Incrementalo cada vez que cambies el codigo,
-// si no CloudStream no detectara la actualizacion.
-version = 1
+// Numero de version del plugin. Incrementalo cuando cambies el codigo.
+version = 2
 
 cloudstream {
-    description = "Doramas con subtitulos en Espanol y Latino (doramasyt.com)"
-    authors = listOf("noennn")
-    // 0: Down | 1: Ok | 2: Slow | 3: Beta
-    status = 1
     language = "mx"
-    tvTypes = listOf("AsianDrama")
+    // All of these properties are optional, you can safely remove them
+
+    //description = "Lorem Ipsum"
+    authors = listOf("noennn")
+
+    /**
+     * Status int as the following:
+     * 0: Down
+     * 1: Ok
+     * 2: Slow
+     * 3: Beta only
+     * */
+    status = 1 // will be 3 if unspecified
+    tvTypes = listOf(
+        "AsianDrama",
+    )
+
     iconUrl = "https://www.google.com/s2/favicons?domain=doramasyt.com&sz=%size%"
 }
 
-// Namespace unico de este modulo (el default del root es com.noennn.cs)
 extensions.configure<com.android.build.api.dsl.LibraryExtension> {
     namespace = "com.noennn.cs.doramasyt"
 }

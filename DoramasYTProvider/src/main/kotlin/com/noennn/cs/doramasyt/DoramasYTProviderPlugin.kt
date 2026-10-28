@@ -1,18 +1,13 @@
 package com.noennn.cs.doramasyt
 
-import android.content.Context
 import com.lagradost.cloudstream3.plugins.CloudstreamPlugin
 import com.lagradost.cloudstream3.plugins.Plugin
+import android.content.Context
 
-/**
- * Punto de entrada del plugin.
- * CloudStream busca esta clase por la anotacion @CloudstreamPlugin y lee su
- * nombre completo desde el manifest.json que genera el build.
- */
 @CloudstreamPlugin
-class DoramasYTProviderPlugin : Plugin() {
+class DoramasYTProviderPlugin: Plugin() {
     override fun load(context: Context) {
-        // Registra el provider. No edites la lista de providers directamente.
+        // All providers should be added in this manner. Please don't edit the providers list directly.
         registerMainAPI(DoramasYTProvider())
     }
 }

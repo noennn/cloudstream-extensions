@@ -7,12 +7,6 @@ import com.lagradost.cloudstream3.utils.loadExtractor
 import java.util.*
 import kotlin.collections.ArrayList
 
-/**
- * Provider de ejemplo: https://www.doramasyt.com
- *
- * Adaptado de la implementacion original de Stormunblessed (cloudstream-3, GPL-3.0).
- * Sirve como referencia del contrato que debe cumplir un provider.
- */
 class DoramasYTProvider : MainAPI() {
     companion object {
         fun getType(t: String): TvType {
@@ -20,7 +14,6 @@ class DoramasYTProvider : MainAPI() {
             else if (t.contains("Pelicula")) TvType.Movie
             else TvType.AsianDrama
         }
-
         fun getDubStatus(title: String): DubStatus {
             return if (title.contains("Latino") || title.contains("Castellano"))
                 DubStatus.Dubbed
@@ -42,7 +35,6 @@ class DoramasYTProvider : MainAPI() {
         TvType.AsianDrama,
     )
 
-    /** El sitio usa token CSRF: se lee del meta tag y se reusa en el POST de capitulos. */
     private suspend fun getToken(url: String): Map<String, String> {
         val maintas = app.get(url, headers = mapOf(
             "Host" to "www.doramasyt.com",
@@ -70,14 +62,14 @@ class DoramasYTProvider : MainAPI() {
 
     override suspend fun getMainPage(page: Int, request: MainPageRequest): HomePageResponse {
         val urls = listOf(
-            Pair("$mainUrl/emision", "En emision"),
+            Pair("$mainUrl/emision", "En emisión"),
             Pair("$mainUrl/doramas", "Doramas"),
             Pair("$mainUrl/doramas?categoria=pelicula", "Peliculas")
         )
         val items = ArrayList<HomePageList>()
         items.add(
             HomePageList(
-                "Capitulos actualizados",
+                "Capítulos actualizados",
                 app.get(mainUrl, timeout = 120).document.select("li.col article").mapNotNull { el ->
                     val title = el.selectFirst("h3")?.text() ?: return@mapNotNull null
                     val poster = el.selectFirst("img")?.attr("data-src") ?: el.selectFirst("img")?.attr("src") ?: ""
@@ -85,7 +77,7 @@ class DoramasYTProvider : MainAPI() {
                     val url = el.selectFirst("a")?.attr("href")
                         ?.replace("ver/", "dorama/")
                         ?.replace(epRegex, "sub-espanol") ?: return@mapNotNull null
-                    val epNum = title.substringAfter("Capitulo").trim().toIntOrNull()
+                    val epNum = title.substringAfter("Capítulo").trim().toIntOrNull()
                     newAnimeSearchResponse(title, url) {
                         this.posterUrl = fixUrl(poster)
                         addDubStatus(getDubStatus(title), epNum)
@@ -186,7 +178,6 @@ class DoramasYTProvider : MainAPI() {
         }
     }
 
-    /** Redirige dominios de embed que cambiaron a sus reemplazos vigentes. */
     suspend fun customLoadExtractor(
         url: String,
         referer: String?,
