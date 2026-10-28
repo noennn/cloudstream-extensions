@@ -26,6 +26,17 @@ https://raw.githubusercontent.com/noennn/cloudstream-extensions/builds/repo.json
 
 ## Como agregar un sitio nuevo
 
+### Opcion rapida: el script
+
+```bash
+./nuevo-proveedor.sh MiSitio https://misitio.com es
+```
+
+Crea la carpeta completa con los 4 archivos y los selectores CSS de ejemplo.
+Solo tienes que ajustar los selectores al HTML real del sitio y hacer push.
+
+### Opcion manual
+
 Solo hay que crear **una carpeta**. `settings.gradle.kts` la incluye sola.
 
 ```
