@@ -1,0 +1,132 @@
+[
+    {
+        "url": "https://raw.githubusercontent.com/noennn/cloudstream-extensions/builds/CinecalidadProvider.cs3",
+        "status": 1,
+        "version": 1,
+        "name": "CinecalidadProvider",
+        "internalName": "CinecalidadProvider",
+        "authors": [
+            "noennn"
+        ],
+        "description": "Peliculas y series en espa\u00f1ol.",
+        "fileSize": 17238,
+        "repositoryUrl": "https://github.com/noennn/cloudstream-extensions",
+        "language": "mx",
+        "tvTypes": [
+            "TvSeries",
+            "Movie"
+        ],
+        "iconUrl": "https://www.google.com/s2/favicons?domain=cinecalidad.lol&sz=%size%",
+        "apiVersion": 1,
+        "fileHash": "sha256-117ffedb40b063114e8f50cbd1966d6b7121414841e3d0a15fd0d870bace7b77"
+    },
+    {
+        "url": "https://raw.githubusercontent.com/noennn/cloudstream-extensions/builds/DoramasYTProvider.cs3",
+        "status": 1,
+        "version": 3,
+        "name": "DoramasYTProvider",
+        "internalName": "DoramasYTProvider",
+        "authors": [
+            "noennn"
+        ],
+        "description": "Doramas asiaticas subtituladas en espa\u00f1ol.",
+        "fileSize": 19958,
+        "repositoryUrl": "https://github.com/noennn/cloudstream-extensions",
+        "language": "mx",
+        "tvTypes": [
+            "AsianDrama",
+            "Movie",
+            "OVA"
+        ],
+        "iconUrl": "https://www.google.com/s2/favicons?domain=doramasyt.com&sz=%size%",
+        "apiVersion": 1,
+        "fileHash": "sha256-3b80e4f06ec98989eafe0baf3682cbbe714546edd0a29ee83c08c2b30042a03a"
+    },
+    {
+        "url": "https://raw.githubusercontent.com/noennn/cloudstream-extensions/builds/LatAnimeProvider.cs3",
+        "status": 1,
+        "version": 1,
+        "name": "LatAnimeProvider",
+        "internalName": "LatAnimeProvider",
+        "authors": [
+            "noennn"
+        ],
+        "description": "Anime en latino y subtitulado.",
+        "fileSize": 14187,
+        "repositoryUrl": "https://github.com/noennn/cloudstream-extensions",
+        "language": "mx",
+        "tvTypes": [
+            "Anime",
+            "OVA"
+        ],
+        "iconUrl": "https://latanime.org/public/img/logito.png",
+        "apiVersion": 1,
+        "fileHash": "sha256-e58b0aa6cd04d116f0cd020cd2013d7de1f80047a7c59266821c235f4fda5f76"
+    },
+    {
+        "url": "https://raw.githubusercontent.com/noennn/cloudstream-extensions/builds/PeliculasFlixProvider.cs3",
+        "status": 1,
+        "version": 1,
+        "name": "PeliculasFlixProvider",
+        "internalName": "PeliculasFlixProvider",
+        "authors": [
+            "noennn"
+        ],
+        "description": "Peliculas en espa\u00f1ol (HD).",
+        "fileSize": 34456,
+        "repositoryUrl": "https://github.com/noennn/cloudstream-extensions",
+        "language": "es",
+        "tvTypes": [
+            "Movie"
+        ],
+        "iconUrl": "https://peliculasflix.co/img/logo.png",
+        "apiVersion": 1,
+        "fileHash": "sha256-10058b7a37eb078df692650c12ce97ec9262c5fbc6e21c9edaff8263a7d41761"
+    },
+    {
+        "url": "https://raw.githubusercontent.com/noennn/cloudstream-extensions/builds/Pelisplus4KProvider.cs3",
+        "status": 1,
+        "version": 1,
+        "name": "Pelisplus4KProvider",
+        "internalName": "Pelisplus4KProvider",
+        "authors": [
+            "noennn"
+        ],
+        "description": "Peliculas y series en espa\u00f1ol en calidad 4K.",
+        "fileSize": 43537,
+        "repositoryUrl": "https://github.com/noennn/cloudstream-extensions",
+        "language": "mx",
+        "tvTypes": [
+            "Movie",
+            "TvSeries",
+            "AsianDrama",
+            "Anime"
+        ],
+        "iconUrl": "https://www.google.com/s2/favicons?domain=pelisplus.to&sz=%size%",
+        "apiVersion": 1,
+        "fileHash": "sha256-f588b8d76fffd8a006a3f0ce3260e09ed5267031dbe5eca02e346ef04f473689"
+    },
+    {
+        "url": "https://raw.githubusercontent.com/noennn/cloudstream-extensions/builds/SoloLatinoProvider.cs3",
+        "status": 1,
+        "version": 1,
+        "name": "SoloLatinoProvider",
+        "internalName": "SoloLatinoProvider",
+        "authors": [
+            "noennn"
+        ],
+        "description": "Peliculas, series, animes y cartoons en Espa\u00f1ol y Espa\u00f1ol Latio",
+        "fileSize": 43619,
+        "repositoryUrl": "https://github.com/noennn/cloudstream-extensions",
+        "language": "mx",
+        "tvTypes": [
+            "Movie",
+            "TvSeries",
+            "Anime",
+            "Cartoon"
+        ],
+        "iconUrl": "https://sololatino.net/wp-content/uploads/2020/10/cropped-logo-final-192x192.png",
+        "apiVersion": 1,
+        "fileHash": "sha256-f4f829ad151c2bc7e2bd2fba4672d31b6855744e4508e1c7b6dc54dd12b6edd2"
+    }
+]

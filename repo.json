@@ -1,0 +1,9 @@
+{
+  "name": "Noennn Extensions",
+  "description": "Extensiones de CloudStream 3 para sitios web propios.",
+  "iconUrl": "https://raw.githubusercontent.com/noennn/cloudstream-extensions/master/assets/repoIcon.jpg",
+  "manifestVersion": 1,
+  "pluginLists": [
+    "https://raw.githubusercontent.com/noennn/cloudstream-extensions/builds/plugins.json"
+  ]
+}
