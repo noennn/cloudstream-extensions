@@ -48,7 +48,6 @@ cloudstream {
     description = "Descripcion corta que se ve en la lista de extensiones"
     authors = listOf("noennn")
     status = 1          // 0: Caido | 1: Ok | 2: Lento | 3: Beta
-    adult = false
     language = "es"     // "es", "mx", "en"...
     tvTypes = listOf("Movie", "TvSeries")
     iconUrl = "https://www.google.com/s2/favicons?domain=misitio.com&sz=%size%"

@@ -7,7 +7,6 @@ cloudstream {
     authors = listOf("noennn")
     // 0: Down | 1: Ok | 2: Slow | 3: Beta
     status = 1
-    adult = false
     language = "mx"
     tvTypes = listOf("AsianDrama")
     iconUrl = "https://www.google.com/s2/favicons?domain=doramasyt.com&sz=%size%"
