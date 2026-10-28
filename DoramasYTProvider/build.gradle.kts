@@ -1,5 +1,5 @@
 // Numero de version del plugin. Incrementalo cuando cambies el codigo.
-version = 2
+version = 3
 
 cloudstream {
     language = "mx"

@@ -33,6 +33,8 @@ class DoramasYTProvider : MainAPI() {
     override val hasQuickSearch = true
     override val supportedTypes = setOf(
         TvType.AsianDrama,
+        TvType.Movie,
+        TvType.OVA,
     )
 
     private suspend fun getToken(url: String): Map<String, String> {
