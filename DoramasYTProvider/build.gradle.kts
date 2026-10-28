@@ -4,8 +4,7 @@ version = 2
 cloudstream {
     language = "mx"
     // All of these properties are optional, you can safely remove them
-
-    //description = "Lorem Ipsum"
+    description = "Doramas asiaticas subtituladas en español."
     authors = listOf("noennn")
 
     /**
